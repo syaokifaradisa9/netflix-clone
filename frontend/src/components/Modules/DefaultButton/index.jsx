@@ -3,13 +3,13 @@ import React from "react";
 const DefaultButton = ({
     text,
     onClick,
-    styles = "bg-red-600 text-white py-1 px-4 rounded",
+    styles = "",
     isArrowIcon = false
 }) => {
     return (
         <button
             onClick={onClick}
-            className={`${styles}`}>
+            className={`bg-red-600 text-white py-1 px-4 rounded ${styles}`}>
             {text}
             {isArrowIcon && (
                 <svg

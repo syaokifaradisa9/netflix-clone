@@ -4,6 +4,7 @@ import EachUtils from '../../utils/EachUtils'
 import { useAtom } from 'jotai'
 import { languageAtom } from '../../jotai/atoms'
 import { LIST_JUMBOTRON_EN, LIST_JUMBOTRON_ID } from '../../constants/listJumbotron';
+import InputMembership from '../Modules/InputMembership'
 
 const Jumbotron = () => {
     const [language,] = useAtom(languageAtom)
@@ -26,6 +27,7 @@ const Jumbotron = () => {
                         <p className='text-white text-xl'>
                             {item.desc}
                         </p>
+                        <InputMembership />
                     </div>
                 )}
             />
